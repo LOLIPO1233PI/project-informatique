@@ -33,7 +33,7 @@ def image_handler(file: str, extension: str = "png") -> bytes:
         return ""
 
 
-def large_txtfile_handler(file: str) -> Generator[str]:
+def large_txtfile_handler(file: str) -> Generator[str, None, None]:
     try:
         with open(os.path.join("text", f"{file}.txt"), "r") as f:
             data = f.read()
