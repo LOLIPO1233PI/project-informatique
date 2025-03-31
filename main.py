@@ -10,7 +10,7 @@ print("\033[2J\033[3J\033[HStarting ...")
 st.set_page_config(
     "YesPing Presentation", page_icon=os.path.join("images", "favicon.ico")
 )
-
+st.markdown(file_handler.load_css("default"), unsafe_allow_html=True)
 st.markdown(file_handler.html_handler("logo"), unsafe_allow_html=True)
 st.markdown(
     html_miscs.center_text("Everyone has the right to experience good internet", 27),
@@ -45,7 +45,6 @@ def part1() -> None:
 
 def part2() -> None:
     st.markdown(file_handler.txtfile_handler("netchoice"))
-
 
 def part3() -> None:
     data = pandas.read_excel(os.path.join("data", "materials.xlsx"))

@@ -8,7 +8,7 @@ def html_handler(file: str) -> str:
         with open(os.path.join("images", f"{file}.html"), "r") as f:
             return f.read()
     except FileNotFoundError:
-        print("Html file not found")
+        print("HTML file not found")
         return ""
     except PermissionError:
         print("Permission denied")
@@ -41,7 +41,7 @@ def large_txtfile_handler(file: str) -> Generator[str, None, None]:
             yield word + " "
             time.sleep(0.16)
     except FileNotFoundError:
-        print("Html file not found")
+        print("TXT file not found")
         yield ""
     except PermissionError:
         print("Permission denied")
@@ -56,7 +56,22 @@ def txtfile_handler(file: str) -> str:
         with open(os.path.join("text", f"{file}.txt"), "r") as f:
             return f.read()
     except FileNotFoundError:
-        print("Html file not found")
+        print("TXT file not found")
+        return ""
+    except PermissionError:
+        print("Permission denied")
+        return ""
+    except (OSError, IOError):
+        print("OSError")
+        return ""
+
+def load_css(name: str) -> str:
+    # loading css put in a html format
+    try:
+        with open(os.path.join("css", f"{name}.html"), "r") as f:
+            return f.read()
+    except FileNotFoundError:
+        print("CSS file not found")
         return ""
     except PermissionError:
         print("Permission denied")
