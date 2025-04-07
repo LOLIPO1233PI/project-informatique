@@ -1,1 +1,2 @@
-For your entreprise **Newton's Internationnal school** We will choose the **PAN** or **Metropolitan Area Network** due to it's ability to communicate between Local networks which is usefull due to it's size and span over multiple floors.
+For your entreprise **Newton's Internationnal school** We will choose the **Metropolitan Area Network** due to it's ability to communicate between multiple local networks which is optimal due to the size of your entreprise.
+The schema of the network should look like this:
