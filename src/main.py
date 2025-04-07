@@ -34,13 +34,13 @@ tab1, tab2, tab3 = st.tabs(
 
 def part1() -> None:
     st.markdown(
-        "↪ :blue-background[extremely fast internet speeds with the help of our sponsor :orange[Orange]]"
+        "↪ :blue-background[Extremely fast internet speeds with the help of our sponsor :orange[Orange]]"
     )
-    st.markdown("↪ :green-background[protection against ddos attacks]")
+    st.markdown("↪ :green-background[Protection against DDOS attacks]")
     st.markdown(
-        "↪ :red-background[adapted network infrastructure suited for your needs]"
+        "↪ :red-background[Adapted network infrastructure suited for your needs]"
     )
-    st.markdown("↪ :orange-background[quality material (fix this wael sama)]")
+    st.markdown("↪ :orange-background[Quality materials]")
 
 
 def part2() -> None:
