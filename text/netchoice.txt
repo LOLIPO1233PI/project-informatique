@@ -1,4 +1,4 @@
 For your entreprise **Newton's Internationnal school** We will choose the **Metropolitan Area Network** due to it's ability to communicate between multiple local networks paired with a elongated star network typoligy which is optimal due to the size of your entreprise.
 ##### The schema of the network should look like this:
-    (Image NON DISPONIBLE)
+    ![](images/schema.png)
 This is the most optimal schema we could come up with due it's unique polivalence and low cost maintenance.
