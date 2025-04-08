@@ -45,6 +45,8 @@ def part1() -> None:
 
 def part2() -> None:
     st.markdown(file_handler.txtfile_handler("netchoice"))
+    st.image("https://www.dropbox.com/scl/fi/9eukvnekg9k0qjpwzvzgu/schema.png?rlkey=ulp4lplee6v01fz3n2ugdbmr7&st=ylswv205&dl=1")
+    st.markdown("This is the most optimal schema we could come up with due it's unique polivalence and low cost maintenance.")
 
 def part3() -> None:
     data = pandas.read_excel(os.path.join("data", "materials.xlsx"))
